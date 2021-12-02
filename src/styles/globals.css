@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family:  'Alegreya', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+
+h1 {
+  font-size: 36px;
+  font-family: 'Alegreya', sans-serif;
+  color:black;
+  font-weight: 400;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
