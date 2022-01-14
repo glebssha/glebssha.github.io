@@ -16,7 +16,9 @@ export default function BgImage({hide, children}) {
       if (a.image === src) {
         setLoading(false)
       }
-      setSrc(a.image)
+      let newSrc= `${process.env.REACT_APP_BACKEND_HOST}/api/image/${a.url}` 
+      setSrc(newSrc)
+      console.log(newSrc)
       setLocations(a.location)
   }
 
