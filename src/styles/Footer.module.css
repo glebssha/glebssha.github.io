@@ -1,0 +1,8 @@
+.footerMain {
+    width: 100%;
+    bottom: 20px;
+    left: 0;
+    position: absolute;
+    height: 40px;
+    /* background-color: white; */
+}

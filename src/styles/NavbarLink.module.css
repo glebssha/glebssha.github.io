@@ -1,0 +1,40 @@
+.link {
+    color: white;
+    font-size: 25px;
+    padding: 10px 40px;
+    z-index: 10000;
+    position: relative;
+}
+
+.inlineLink {
+    display: inline;
+    padding: 0 10px;
+    font-size: 29px;
+}
+
+.inlineLink a {
+    filter: none;
+}
+
+.link a {
+    text-decoration: none;
+    position: relative;
+    filter: drop-shadow(-1px 4px 6px #000000);
+}
+
+.link a:hover:after {
+    width: 100%;
+}
+
+.link a:after {
+    transition: .25s;
+    content: "";
+    display: block;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: white;
+    z-index: 102;
+}

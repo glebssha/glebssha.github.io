@@ -1,0 +1,26 @@
+
+.headerMain {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+}
+
+.headerMain:before {
+    content: "";
+    display: block;
+    opacity: .5;
+    filter: blur(20px);
+    height: 75px;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    z-index: 100;
+}
+
+.title {
+    position: relative;
+    z-index: 101;
+    margin-top: 10px;
+    text-align: center;
+}
