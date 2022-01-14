@@ -1,0 +1,17 @@
+.profileWrapper {
+    z-index: 104;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profileWrapper img {
+    max-width: 50px;
+    padding-left: 10px;
+    max-height: 50px;
+    box-sizing: content-box;
+}
+
+.profileUsername {
+    font-size: 20px;
+}

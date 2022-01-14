@@ -8,7 +8,7 @@ export default function Navbar() {
     <ul className={styles.navbarList}>
       <NavbarLink text="About" href="/about" />
       <NavbarLink text="Contact Us" href="/contact" />
-      <NavbarLink text="Submit" href="/submit" />
+      <NavbarLink text="Submit" href="/upload" />
     </ul>
     </>
   );

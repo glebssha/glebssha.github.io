@@ -12,6 +12,7 @@ export default function BgImage({hide, children}) {
   const load = async () => {
       setLoading(true)
       let a = await getNextImage()
+      console.log(a)
       if (a.image === src) {
         setLoading(false)
       }

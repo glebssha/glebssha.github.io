@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import styles from '../styles/Menu.module.css'
 import NavbarLink from './NavbarLink'
+import AuthService from '../services/auth.service';
 
 export default function Menu() {
   const [isActive, setActive] = useState(false);
+  const auth = AuthService.getCurrentUser()
 
   const toggleClass = () => {
     setActive(!isActive);
@@ -21,9 +23,8 @@ export default function Menu() {
 
       <ul>
         <NavbarLink text="Upload" href="/upload" />
-        <NavbarLink text="Filter" href="/filter" />
-        <NavbarLink text="Share" href="/share"/>
         <NavbarLink text="About" href="/about" />
+        {auth && <NavbarLink text="Logout" href="/logout" />}
       </ul>
     </div>
     </>
