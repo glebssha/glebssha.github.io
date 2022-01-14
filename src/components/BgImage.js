@@ -6,19 +6,19 @@ import { getNextImage } from '../lib/images'
 
 export default function BgImage({hide, children}) {
   const [src, setSrc] = useState("");
+  const [uuid, setUuid] = useState("");
   const [locations, setLocations] = useState([]);
   const [loading, setLoading] = useState(true);
 
   const load = async () => {
       setLoading(true)
       let a = await getNextImage()
-      console.log(a)
-      if (a.image === src) {
+      if (a.url === uuid) {
         setLoading(false)
       }
       let newSrc= `${process.env.REACT_APP_BACKEND_HOST}/api/image/${a.url}` 
       setSrc(newSrc)
-      console.log(newSrc)
+      setUuid(a.url)
       setLocations(a.location)
   }
 
