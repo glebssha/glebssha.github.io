@@ -18,7 +18,7 @@ export default function Upload() {
     formData.append('country', country);
     setLoading(true);
     fetch(
-      `${process.env.REACT_APP_BACKEND_HOST}/api/auth/sign_in`,
+      `${process.env.REACT_APP_BACKEND_HOST}/api/upload/`,
       {
         method: 'POST',
         body: formData,
