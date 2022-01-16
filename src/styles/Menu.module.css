@@ -1,8 +1,12 @@
 .menuOpener {
-    position: absolute;
+    position: relative;
     z-index: 103;
     height: 35px;
     width: 35px;
+}
+
+.menu {
+    position: relative;
 }
 
 .menuOpener:hover {
@@ -43,12 +47,6 @@
     right: 0;
 }  
 
-.menu {
-    position: absolute;
-    min-width: 417px;
-    padding: 30px;
-    min-height: 437px;
-}
 
 .active ul {
     opacity: 1;
@@ -71,6 +69,7 @@
 
 .menu.active ul {
     opacity: 1;
+    display: block;
     visibility: visible;
 }
 
@@ -83,9 +82,10 @@
     list-style-type: none;
     margin: 0;
     text-align: center;
-    padding: 40px 0;
+    padding: 40px;
     z-index: 106;
-    position: relative;
+    display: none;
+    position: absolute;
 }
 
 .menu li:first-child {
